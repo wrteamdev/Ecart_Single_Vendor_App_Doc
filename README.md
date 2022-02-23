@@ -1,1 +1,1 @@
-# Ecart_Single_Vendor_App_Doc
+# eCart Single Vendor Android Apps Doc

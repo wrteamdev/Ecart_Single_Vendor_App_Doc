@@ -102,7 +102,6 @@
 									<li><a href="#note">Download google json file from firebase and replace it with
 											exist google json file in android folder.</a></li>
 									<br>
-									<a href="#note"><img src="images/change_google_json_file.jpg"></a>
 								</ol>
 
 
@@ -287,43 +286,65 @@
 									<div class="section_bdr"></div>
 								</div>
 							</section>
-							<section id="privacy">
-								<div class="container">
-									<h2>Get Privacy-Policy URL for PlayStore.</h2>
-									<li>First login to admin panel.</li>
-									<li>System > Privacy Policy </li>
-									<a href="#privacy"><img src="images/privacy1.jpg"></a><br><br>
-									<div class="section_bdr"></div>
-								</div>
-							</section>
-							<section id="del_boy">
-								<div class="container">
-									<h2>Add Priveacy Policy for Delivery Boy App</h2>
-									<li>You have to change just Delivery Boy privacy policy and terms condition text.
-										Not
-										need to change any link anywhere in android side.</li>
-									<li>System > Delivery Boy Privacy Policy </li>
-									<a href="#privacy"><img src="images/del_boy.jpg"></a><br><br>
-									<div class="section_bdr"></div>
-								</div>
-							</section>
-							<section id="timeslot">
-								<div class="container">
-									<h2>Add TimeSlot in panel.</h2>
-									<li>First login to admin panel.</li>
-									<li>System > TimeSlot </li>
-									<a href="#timeslot"><img src="images/time.jpg"></a><br><br>
-									<div class="section_bdr"></div>
-								</div>
-							</section>
+							<section>
+								<h4>Add or replace google-services.json files from firebase to android code</h4>
+								<br /><img src="images/google_json1.png"></a><br />
+								<br /><img src="images/google_json2.png"></a><br />
+								<br /><img src="images/google_json3.png"></a><br />
+								<br /><img src="images/google_json4.png"></a><br />
+								<h4>Note: </h4>
+								<li>When we upadte Application on playstore we have to Add Signature SHA1 and SHA256 in
+									Firebase setting.Here ispath where you can get SHA1 and SHA256 from PlayConsole.
+								</li>
 
+								<h2>It's compulsory to follow these steps otherwise OTP will not work properly</h2>
+								<ol>
+									<li>If its debug apk</li>
+									<ol>
+										<li>Add sha1 and sha256 in firebase from android studio</li>
+									</ol>
+								</ol>
+								<ol>
+									<li>If you are using playstore app,
+										<ol>
+											<li>Add sha1 and sha256 (Total 4 keys 2
+												sha1 and 2 sha256) in firebase from
+												playconsole (App signing key certificate [sha1 and sha256] and Upload
+												key certificate [sha1 and sha256]
+												)</li><br />
+											<img src="images/otp_sha_3.png"></a><br />
+										</ol>
+									</li>
+								</ol>
+								<ol>
+									<li>If play console app not available than do the follow the below steps</li>
+									<ol type="a">
+										<li>Download keystore explorer (Download link :
+											<a href="https://keystore-explorer.org">https://keystore-explorer.org</a>)
+										</li>
+										<li>Install keystore explorer</li>
+										<li>Open keystore via keystore explorer</li>
+										<li>Enter password</li>
+										<li>Click your keystore name</li>
+										<li>then you will get the sha1 & sha256 key add that both key in firebase
+										</li>
+									</ol>
+									<li>Enable device verification from firebase (Documentation is there)</li>
+									<li>Download json file from firebase and add it into android code (Documentation
+										is
+										there)</li>
+									<li>Run app from PlayStore/Android Studio or Create new APK and check</li>
+								</ol>
+
+							</section>
 							<section id="jwt">
 								<div class="container">
 									<h2>Where to set JWT Key in Android and PHP.</h2>
 									<li>go to android >app >java > wrteam.ekart.shop > helper > Constant.java</li>
-									<li>JWT Key is just like password you can create your own and it must be same in
+									<li>JWT Key is ju st like password you can create your own and it must be same in
 										eCart App, eCart Delivery Boy App as well as Php side.</li>
 									<li>Please check below given image.</li>
+									<a href="#jwt"><img src="images/admin.jpg"></a><br>
 									<div class="section_bdr"></div>
 								</div>
 							</section>

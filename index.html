@@ -50,6 +50,7 @@
             display: inline-block;
             position: relative;
             transition: 0.5s;
+            font-size: 1.4rem;
         }
 
         .button span:after {
@@ -69,6 +70,42 @@
             opacity: 1;
             right: 0;
         }
+
+        .logo{
+            height: 100px;
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        .center{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+
+        }
+
+        @media (max-width:480px){
+            .header{
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            h2{
+                font-size: inherit;
+            }
+
+            .center{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+
+
     </style>
 </head>
 
@@ -78,10 +115,8 @@
         <div class="container background">
             <table class="table">
                 <thead>
-                    <tr>
-                        <th><img src="images/app_icon.png"
-                                height="150px"
-                                width="150px"
+                    <tr class="header">
+                        <th><img src="images/app_icon.png" class="logo"
                                 alt="eCart - Grocery, Food Delivery, Fruits & Vegetable store, Full Android Ecommerce App">
                         </th>
                         <th style="vertical-align: middle;">
@@ -94,8 +129,9 @@
             </table>
         </div>
     </div>
-    <center>
-        <div style="margin: 50px;"><button class="button"
+
+        <div class="center">
+            <button class="button"
                 style="vertical-align:middle"
                 onclick="location.href = 'customer-app/index.html';"><span>Customer App</span></button>
 
@@ -111,7 +147,7 @@
                 style="vertical-align:middle"
                 onclick="location.href = 'https://docs.google.com/document/d/e/2PACX-1vQlIbDaV_TJ7m6Db5kRnsq_SFkgafGDDPwCqpQrwln1kWwcXbGMJHWaHnO_hxs4dX40C7jCXGDwmHx4/pub';"><span>FAQ</span></button>
         </div>
-    </center>
+
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity">

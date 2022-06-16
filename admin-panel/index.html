@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>eCart Mobile App Dashboard Setup | Documentation</title>
+        <title>eCart Admin Panel Dashboard Setup | Documentation</title>
         <!-- Styles -->
         <link href="assets/css/theDocs.all.min.css" rel="stylesheet">
         <link href="assets/css/custom.css" rel="stylesheet">
@@ -795,6 +795,20 @@
                                 <li><span  style="color:#1a63b8;">Reply To eMail ID</span> :<img src="assets/img/reply_email.png"  width="200px"> Customer who receives the email will be able to reply on this email id</li>
                             </ul>
                         </ul>
+						
+						<ul>
+                        <li type="circle" style="color:#d34646;">Cron Jobs Setting (Automatic delete flash sale when sales is over)</li>
+                        <ul>
+                            <li style="color:green;" type="circle">We have to set cron job and here is the information to the cron job on your server. So cron job will automatic run and delete flash sale on your panel.</li>
+                        </ul>
+                        <li>Cron job is set from your server panel</li>
+                        <ul>
+                            <li><span style="color:#1a63b8;">Common Settings</span> : From Here you have to set "For every hours"</li>
+                            <li><span style="color:#1a63b8;">Command</span> : From Here you have to set your path(server
+                                path) for file <span>https://your_panel.com/update-flash-sales.php</span></li>
+                        </ul>
+                    </ul>
+					
                         <h3 id="payment_method">Payment Methods</h3>
                         <li  style="color:green;" type="circle">The System Tab contains an Sub tab name as Payment Methods </li>
                         <!-- <div  class="promo">
